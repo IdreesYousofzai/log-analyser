@@ -135,6 +135,7 @@ def detect_brute_force(entries):
         for ip, count in counts.items()
         if count >= BRUTE_FORCE_401_THRESHOLD
     }
+  
 
 
 def detect_scanning(entries):
