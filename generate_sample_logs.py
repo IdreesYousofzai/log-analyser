@@ -56,6 +56,7 @@ def build_normal_traffic(start, count, ip_pool):
 
 NORMAL_IPS = [f"198.51.100.{i}" for i in range(2, 30)]
 
+
 def main():
     random.seed(42)
     start = datetime(2026, 6, 15, 8, 0, 0)
