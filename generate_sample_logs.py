@@ -25,6 +25,7 @@ STATUS_OK = [200, 200, 200, 200, 304, 301]
 UA = '"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"'
 REF = '"-"'
 
+
 def fmt_time(dt):
     return dt.strftime("%d/%b/%Y:%H:%M:%S -0000")
 
