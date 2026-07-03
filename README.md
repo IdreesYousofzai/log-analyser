@@ -192,12 +192,3 @@ log_analyzer/
 ├── reports/                 # generated .txt / .html reports land here
 └── README.md
 ```
-
-## Possible extensions
-
-- Parse Linux `auth.log` in addition to web logs (different regex, same
-  detection framework)
-- Support Windows Event Log CSV exports (Event ID 4625 = failed logon)
-- Cross-reference flagged IPs against a threat-intel feed or GeoIP lookup
-- Auto-generate `fail2ban` or firewall block rules from the flagged IP list
-- Add a rolling/live mode that tails a log file in real time
