@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 log_analyzer.py
 ----------------
