@@ -249,6 +249,7 @@ def generate_txt_report(summary, out_path):
     return out_path
 
 
+
 def generate_html_report(summary, out_path):
     def esc(x):
         return html.escape(str(x))
