@@ -1,0 +1,54 @@
+======================================================================
+  LOG ANALYSIS SUMMARY REPORT
+======================================================================
+Report generated: 2026-07-03 10:13:23
+Source file(s):   sample_logs/access_log_2_bruteforce.log
+
+Total requests parsed: 296
+Lines skipped (unparseable): 0
+Unique IP addresses seen: 29
+Overall error rate (4xx/5xx): 15.20%  (45 of 296 requests)
+
+----------------------------------------------------------------------
+TOP 10 REQUESTING IPs
+----------------------------------------------------------------------
+  203.0.113.66             46 requests
+  198.51.100.19            15 requests
+  198.51.100.24            14 requests
+  198.51.100.22            13 requests
+  198.51.100.8             11 requests
+  198.51.100.26            11 requests
+  198.51.100.27            11 requests
+  198.51.100.14            11 requests
+  198.51.100.11            10 requests
+  198.51.100.15            10 requests
+
+----------------------------------------------------------------------
+TOP 10 MOST VISITED URLs
+----------------------------------------------------------------------
+  /login                                       46 requests
+  /blog/post-1                                 29 requests
+  /css/style.css                               29 requests
+  /products.html                               27 requests
+  /index.html                                  23 requests
+  /api/cart                                    21 requests
+  /about.html                                  21 requests
+  /api/products                                20 requests
+  /contact.html                                19 requests
+  /images/logo.png                             18 requests
+
+----------------------------------------------------------------------
+STATUS CODE BREAKDOWN
+----------------------------------------------------------------------
+  200     165
+  301      43
+  304      43
+  401      45
+
+----------------------------------------------------------------------
+FLAGGED SUSPICIOUS IPs
+----------------------------------------------------------------------
+  203.0.113.66
+      - Possible brute force: 45 x 401 Unauthorized responses
+
+======================================================================

@@ -1,0 +1,54 @@
+======================================================================
+  LOG ANALYSIS SUMMARY REPORT
+======================================================================
+Report generated: 2026-07-03 10:13:24
+Source file(s):   sample_logs/access_log_3_scanning.log
+
+Total requests parsed: 282
+Lines skipped (unparseable): 0
+Unique IP addresses seen: 29
+Overall error rate (4xx/5xx): 11.35%  (32 of 282 requests)
+
+----------------------------------------------------------------------
+TOP 10 REQUESTING IPs
+----------------------------------------------------------------------
+  203.0.113.77             32 requests
+  198.51.100.14            15 requests
+  198.51.100.5             14 requests
+  198.51.100.27            12 requests
+  198.51.100.12            11 requests
+  198.51.100.13            11 requests
+  198.51.100.2             11 requests
+  198.51.100.6             11 requests
+  198.51.100.24            10 requests
+  198.51.100.29            10 requests
+
+----------------------------------------------------------------------
+TOP 10 MOST VISITED URLs
+----------------------------------------------------------------------
+  /api/products                                28 requests
+  /contact.html                                25 requests
+  /index.html                                  25 requests
+  /products.html                               25 requests
+  /about.html                                  24 requests
+  /images/logo.png                             23 requests
+  /blog/post-1                                 19 requests
+  /js/app.js                                   18 requests
+  /                                            17 requests
+  /api/cart                                    17 requests
+
+----------------------------------------------------------------------
+STATUS CODE BREAKDOWN
+----------------------------------------------------------------------
+  200     167
+  301      49
+  304      34
+  404      32
+
+----------------------------------------------------------------------
+FLAGGED SUSPICIOUS IPs
+----------------------------------------------------------------------
+  203.0.113.77
+      - Possible scanning: 32 x 404 Not Found responses
+
+======================================================================

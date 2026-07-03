@@ -1,0 +1,59 @@
+======================================================================
+  LOG ANALYSIS SUMMARY REPORT
+======================================================================
+Report generated: 2026-07-03 10:13:31
+Source file(s):   sample_logs/access_log_1_normal.log, sample_logs/access_log_2_bruteforce.log, sample_logs/access_log_3_scanning.log, sample_logs/access_log_4_rateflood.log
+
+Total requests parsed: 1198
+Lines skipped (unparseable): 0
+Unique IP addresses seen: 31
+Overall error rate (4xx/5xx): 6.43%  (77 of 1198 requests)
+
+----------------------------------------------------------------------
+TOP 10 REQUESTING IPs
+----------------------------------------------------------------------
+  203.0.113.88             70 requests
+  198.51.100.22            54 requests
+  198.51.100.23            50 requests
+  198.51.100.19            48 requests
+  203.0.113.66             46 requests
+  198.51.100.14            45 requests
+  198.51.100.5             44 requests
+  198.51.100.10            43 requests
+  198.51.100.27            43 requests
+  198.51.100.12            41 requests
+
+----------------------------------------------------------------------
+TOP 10 MOST VISITED URLs
+----------------------------------------------------------------------
+  /api/products                               179 requests
+  /products.html                              100 requests
+  /css/style.css                               98 requests
+  /about.html                                  91 requests
+  /blog/post-1                                 89 requests
+  /images/logo.png                             89 requests
+  /index.html                                  87 requests
+  /contact.html                                85 requests
+  /api/cart                                    82 requests
+  /blog/post-2                                 76 requests
+
+----------------------------------------------------------------------
+STATUS CODE BREAKDOWN
+----------------------------------------------------------------------
+  200     774
+  301     181
+  304     166
+  401      45
+  404      32
+
+----------------------------------------------------------------------
+FLAGGED SUSPICIOUS IPs
+----------------------------------------------------------------------
+  203.0.113.88
+      - Rate abuse: 70 requests in one minute (2026-06-15 08:20)
+  203.0.113.66
+      - Possible brute force: 45 x 401 Unauthorized responses
+  203.0.113.77
+      - Possible scanning: 32 x 404 Not Found responses
+
+======================================================================
