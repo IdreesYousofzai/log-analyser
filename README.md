@@ -1,4 +1,4 @@
-# Web Server Log Analyzer
+# Web Server Log Analyser
 
 A Python tool that parses Apache/Nginx access logs, flags suspicious activity
 (brute-force login attempts, page/directory scanning, and request-rate abuse),
@@ -15,7 +15,7 @@ sysadmin does every day, just automated.
 Before writing any parsing code it's worth understanding the three log types
 this project touches on:
 
-**Apache / Nginx access logs (`access.log`)** — one line per HTTP request, in
+**Apache / Nginx access logs (`access.log`)**: one line per HTTP request, in
 the "combined log format":
 
 ```
