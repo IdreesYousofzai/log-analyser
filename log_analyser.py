@@ -194,6 +194,7 @@ def build_summary(entries, skipped_lines, source_files):
 # 4. REPORT GENERATION
 # ---------------------------------------------------------------------------
 
+
 def generate_txt_report(summary, out_path):
     lines = []
     lines.append("=" * 70)
