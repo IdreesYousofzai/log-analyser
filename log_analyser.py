@@ -149,6 +149,7 @@ def detect_scanning(entries):
     }
 
 
+
 def build_flagged_ips(entries):
     """Merge all detection results into one dict: ip -> [reasons]."""
     detectors = [detect_rate_abuse(entries), detect_brute_force(entries), detect_scanning(entries)]
