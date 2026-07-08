@@ -44,6 +44,7 @@ def write_log(filename, lines):
         f.write("\n".join(lines) + "\n")
     print(f"wrote {filename}: {len(lines)} lines")
 
+
 def build_normal_traffic(start, count, ip_pool):
     lines = []
     t = start
