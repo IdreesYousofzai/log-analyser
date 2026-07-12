@@ -37,8 +37,7 @@ from collections import defaultdict, Counter
 # 1. PARSING
 # ---------------------------------------------------------------------------
 
-# Matches the standard Apache/Nginx "combined" log format, e.g.:
-# 127.0.0.1 - - [10/Oct/2023:13:55:36 -0700] "GET /index.html HTTP/1.1" 200 2326 "-" "Mozilla/5.0"
+
 LOG_PATTERN = re.compile(
     r'(?P<ip>\S+)\s+\S+\s+\S+\s+'
     r'\[(?P<timestamp>[^\]]+)\]\s+'
