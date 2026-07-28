@@ -38,6 +38,7 @@ def normal_line(ip, dt):
     size = random.randint(200, 15000)
     return f'{ip} - - [{fmt_time(dt)}] "{method} {page} HTTP/1.1" {status} {size} {REF} {UA}'
 
+
 def random_ip(base_pool):
     return random.choice(base_pool)
 
