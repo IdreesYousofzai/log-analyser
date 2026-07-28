@@ -30,6 +30,7 @@ def fmt_time(dt):
     return dt.strftime("%d/%b/%Y:%H:%M:%S -0000")
 
 
+
 def normal_line(ip, dt):
     method = random.choice(METHODS)
     page = random.choice(PAGES)
