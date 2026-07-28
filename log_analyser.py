@@ -77,7 +77,6 @@ def parse_line(line):
         "size": size,
     }
 
-
 def load_logs(filepaths):
     """Read and parse one or more log files. Returns (entries, skipped_count)."""
     entries = []
@@ -104,7 +103,6 @@ def load_logs(filepaths):
 RATE_LIMIT_PER_MINUTE = 50   # requests/minute from one IP
 BRUTE_FORCE_401_THRESHOLD = 10   # 401 responses from one IP
 SCANNING_404_THRESHOLD = 15   # 404 responses from one IP
-
 
 def detect_rate_abuse(entries):
     """Flag IPs that exceed RATE_LIMIT_PER_MINUTE requests in any single
