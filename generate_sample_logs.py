@@ -42,6 +42,7 @@ def normal_line(ip, dt):
 def random_ip(base_pool):
     return random.choice(base_pool)
 
+
 def write_log(filename, lines):
     with open(f"{OUT_DIR}/{filename}", "w") as f:
         f.write("\n".join(lines) + "\n")
